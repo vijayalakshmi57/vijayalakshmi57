@@ -1,0 +1,110 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+/* Body background image */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://c1.wallpaperflare.com/preview/40/488/33/clouds-sky-weather-atmosphere-air-landscape.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Optional: Add a background overlay for better readability */
+
+
+
+/* Wrapper */
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Shapes */
+.shape {
+    position: absolute;
+    background: linear-gradient(135deg, #87eaf2, #4481eb);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.6;
+}
+
+.shape-1 {
+    top: -50px;
+    right: -50px;
+}
+
+.shape-2 {
+    bottom: -50px;
+    left: -50px;
+}
+
+/* Container */
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#city {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #4481eb;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4481eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: #87eaf2;
+}
+
+/* Result Display */
+#result {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
